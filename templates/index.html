@@ -10,15 +10,17 @@
 <div class="row gx-lg-5">
 <div class="col-lg-6 d-lg-none"><img src="{% static 'assets/images/home/h15.jpg' %}" alt="homr image"></div>
 <div class="col-lg-6 my-lg-3 mt-md-5 mt-5">
-<h5 class="text-school-yellow">We are</h5>
+<h5 class="text-school-yellow">Navoiy Direksiya</h5>
 <div class="pr-lg-6 pr-md-8 pr-4">
-<h1 class="text-white mb-4">Inventing The Best Steels For A Better World</h1>
-<p class="lead text-silver mb-4">Dolores et ea rebum vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<h1 class="text-white mb-4">            Direksiya yig’ilishlari zaruriyat tarzida, ammo chorakda bir marotabadan o’tkaziladi.
+
+</h1>
+<p class="lead text-silver mb-4">Direksiya qarorlari  Boshqarma boshlig’i tomonidan tasdiqlangan bayonnomalar bilan rasmiylashtiriladi.</p>
 </div>
 <div class="row gx-lg-0 pt-3 mb-lg-3">
-<div class="col-lg-4 col-md-4 col-12"><a class="btn btn-outline-white" href="{% url 'blog-page' %}">Read more</a></div>
+<div class="col-lg-4 col-md-4 col-12"><a class="btn btn-outline-white" href="{% url 'blog-page' %}">Ko'proq</a></div>
 <div class="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-4">
-<div class="ml-n28"><a class="btn btn-school-yellow" href="{% url 'contact-page' %}">Contact us</a></div>
+<div class="ml-n28"><a class="btn btn-school-yellow" href="{% url 'contact-page' %}">Aloqa</a></div>
 </div>
 </div>
 </div>
@@ -473,7 +475,7 @@
 {% for NewsArticle in NewsArticles %}
 <div class="col-lg-4 mb-lg-0 mb-4">
 <article>
-<figure class="entry-media"><a href="{% url 'single-post' NewsArticle.slug %}"><img class="lozad" src="../../../energeticthemes.com/templates/sanat/assets/images/blog/b2-lqip.html" data-src="{{NewsArticle.main_image.url}}" alt="Entry Image" /></a>
+<figure class="entry-media"><a href="{% url 'single-post' NewsArticle.slug %}"><img class="lozad" data-src="{{NewsArticle.main_image.url}}" alt="Entry Image" /></a>
 </figure>
 <div class="entry-content-wrapper">
 <header class="entry-header">
